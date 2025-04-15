@@ -14,19 +14,16 @@
     padding: 0;
 }
 
-html {
-    background-image: url(images/peacockbackground.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-}
 
 body {
     font-size: 1.1em;
     font-family: Times New Roman, Arial, sans-serif;
     background-color: rgb(76, 140, 144);
-    color: white;
+    background-image: url("peacockpattern.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 #container {
@@ -44,12 +41,12 @@ header {
     margin-top: 10px;
     text-align: center;
     border: 1px solid #888888;
-    box-shadow: 15px 15px 5px 0 rgb(44, 150, 93);
+    box-shadow: 15px 15px 5px 0 rgb(255, 156, 51);
     border-radius: 25px;  	
 }
 
 header img {
-    box-shadow: 0 0 20px 5px dark green;
+    box-shadow: 0 0 20px 5px green;
     border-radius: 15px;
 }
 
@@ -131,7 +128,7 @@ footer {
     width: 910px;
     margin: 0;
     padding: 10px;
-    background-color: rgb(44, 150, 93);
+    background-color: rgb(255, 156, 51);
     clear: both;
     color: white;
     font-weight: bold;
