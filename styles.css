@@ -151,9 +151,9 @@ footer a:hover {
 
 /* Table Styling */
 table {
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgb(39, 226, 232, 0.4);
     border-collapse: collapse;
-    color: rgba(51, 51, 51, 0.9);
+    color: rgb(51, 51, 51, 0.9);
     width: 100%;
     margin: 20px 0;
 }
@@ -165,25 +165,23 @@ table caption {
 }
 
 table td {
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgb(39, 226, 232, 0.5);
     vertical-align: top;
     padding: 8px;
     width: 50%;
 }
 
 table tbody tr:nth-child(odd) {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgb(39, 226, 232, 0.5);
 }
 
 table tbody tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgb(39, 226, 232, 0.5);
 }
 
 table a {
-    color: rgba(51, 51, 51, 0.9);
+    color: rgb(51, 51, 51, 0.9);
     text-decoration: none;
 }
 
-table a:hover {
-    text-decoration: underline;
 }
