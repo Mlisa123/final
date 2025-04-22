@@ -1,74 +1,68 @@
 @charset "utf-8";
 /*
-   sample start file for final project - educational use only
+   Sample start file for final project - educational use only
    
    Author: mlisa hartzell  
-   Date:   04062025  
-   
-  
-
+   Date:   2025-04-06
 */
 
 * {
-    margin: 0; 
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 body {
     font-size: 1.1em;
-    font-family: Times New Roman, Arial, sans-serif;
+    font-family: "Times New Roman", Arial, sans-serif;
     background-color: rgb(76, 140, 144);
-    background-image: url("peacockpattern.jpeg");
+    background-image: url("peacockpattern.jpeg"); /* Make sure this file is in the correct folder (usually same directory or /images) */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 
 #container {
     width: 930px;
-    border-width: 1px;
     margin: 0 auto;
     background-color: #06402B;
     color: white;
 }
 
-
 header {
-    width: 910px;	/* reduced by 20px to accommodate shadow */
-    margin-bottom: 30px;
-    margin-top: 10px;
+    width: 910px;
+    margin: 10px auto 30px auto;
     text-align: center;
-    border: 1px solid #888888;
-    box-shadow: 15px 15px 5px 0 rgb(255, 156, 51);
-    border-radius: 25px;  	
+    border: 1px solid #888;
+    box-shadow: 15px 15px 5px 0px rgb(255, 156, 51);
+    border-radius: 25px;
 }
 
 header img {
     box-shadow: 0 0 20px 5px green;
     border-radius: 15px;
+    max-width: 100%;
+    height: auto;
 }
 
 nav {
     width: 200px;
-    margin: 0 5px 0 5px; 
-    padding: 25px 10px 0 10px;
+    margin: 0 5px;
+    padding: 25px 10px 0;
     float: left;
     text-align: center;
-    
 }
 
 nav ul {
-    font-weight: bold;
     list-style: none;
+    font-weight: bold;
 }
 
 nav ul li a {
     padding: 5px;
     color: white;
     text-decoration: none;
-    display:block;
+    display: block;
 }
 
 nav ul li a:hover {
@@ -82,16 +76,17 @@ nav ul li a:hover {
     padding: 10px;
     float: left;
     color: white;
-    border-left: 2px solid;
-    border-right: 2px solid;    
-    background-image: url(images/peacockbackground.jpeg); 
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    background-image: url("images/peacockbackground.jpeg"); /* Again, make sure this path is correct */
+    background-size: cover;
 }
 
 #main p {
     text-indent: 1.5em;
 }
 
-figure{
+figure {
     padding-top: 10px;
     text-align: center;
 }
@@ -102,7 +97,7 @@ figcaption {
 
 aside {
     width: 200px;
-    margin: 0 5px 0 5px;
+    margin: 0 5px;
     padding: 10px;
     float: right;
 }
@@ -120,39 +115,33 @@ h2 {
 
 h3 {
     text-align: center;
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
+    padding: 0.5em 0;
 }
 
 footer {
     width: 910px;
-    margin: 0;
+    margin: 0 auto;
     padding: 10px;
     background-color: rgb(255, 156, 51);
     clear: both;
     color: white;
     font-weight: bold;
     text-align: center;
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 #wrapper {
     width: 930px;
     margin-bottom: 10px;
-    border: 2px solid;
+    border: 2px solid white;
     border-radius: 25px;
 }
 
-/* navigation for footer */
-footer a:link {
-    color: white;
-    text-decoration: none;
-}
-
+/* Footer navigation */
+footer a:link,
 footer a:visited {
-    color: navy;
-    background-color: blue;
+    color: white;
     text-decoration: none;
 }
 
@@ -160,39 +149,41 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Table Styling */
 table {
-   border: 1px solid rgb(255, 255, 255, 0.4);
-   border-collapse: collapse;
-   color: rgb(51, 51, 51, 0.9);     
-   width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-collapse: collapse;
+    color: rgba(51, 51, 51, 0.9);
+    width: 100%;
+    margin: 20px 0;
 }
 
-table caption { 
-   font-size: 1.5em;
-   margin: 0px 0px 10px 0px;
+table caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: white;
 }
 
 table td {
-   border: 1px solid rgb(255, 255, 255, 0.4);
-   vertical-align: top;
-   padding: 4px;
-   width: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    vertical-align: top;
+    padding: 8px;
+    width: 50%;
 }
 
-table tbody tr:nth-of-type(odd) {
-   background-color: rgb(255, 255, 255, 0.4);
+table tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
-table tbody tr:nth-of-type(even) {
-   background-color: rgb(255, 255, 255, 0.6);
+table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 table a {
-   color: rgb(51, 51, 51, 0.9);
-   text-decoration: none;
+    color: rgba(51, 51, 51, 0.9);
+    text-decoration: none;
 }
 
 table a:hover {
-   text-decoration: underline;
+    text-decoration: underline;
 }
-
